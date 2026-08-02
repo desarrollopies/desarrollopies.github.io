@@ -235,7 +235,7 @@ p {
 
 .logo img {
 
-    height: 60px;
+    height: 70px;
 
     width: auto;
 
@@ -363,7 +363,13 @@ p {
 
 .hero h1 {
 
+    max-width: 12ch;
+   
     margin-bottom: 1.5rem;
+
+    letter-spacing: -.03em;
+
+    text-wrap: balance;
 
 }
 
@@ -371,9 +377,11 @@ p {
 
     font-size: 1.15rem;
 
-    max-width: 600px;
+    max-width: 38 rem;
 
-    margin-bottom: 2rem;
+    line-height: 1.8;
+
+    margin-bottom: 2.5rem;
 
 }
 
@@ -403,9 +411,9 @@ p {
 
     position: absolute;
 
-    width: 420px;
+    width: 520px;
 
-    height: 420px;
+    height: 520px;
 
     border-radius: 50%;
 
@@ -427,10 +435,11 @@ p {
 
     width: 100%;
 
-    max-width: 500px;
+    max-width: 560px;
 
-    border-radius: 2rem;
+    border-radius: 2.5rem;
 
-    box-shadow: var(--shadow-md);
+    box-shadow:
+        0 30px 60px rgba(76,60,68,.12);
 
 }
