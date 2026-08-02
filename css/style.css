@@ -1,1 +1,202 @@
-/* Estilos de Asociación PIES */
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Manrope", sans-serif;
+    color: var(--color-text);
+    background: var(--color-background);
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* ==========================================================
+   VARIABLES
+========================================================== */
+
+:root {
+
+    /* Colores */
+
+    --color-primary: #9983E6;
+    --color-secondary: #BA83E6;
+    --color-accent: #DA84E6;
+    --color-accent-alt: #E683BF;
+    --color-highlight: #E68384;
+
+    --color-background: #FFFFFF;
+    --color-background-soft: #F7F7FA;
+
+    --color-text: #4C3C44;
+    --color-text-light: #70646B;
+
+    /* Layout */
+
+    --container-width: 1200px;
+
+    /* Bordes */
+
+    --radius-sm: .5rem;
+    --radius-md: 1rem;
+    --radius-lg: 2rem;
+    --radius-xl: 999px;
+
+    /* Sombras */
+
+    --shadow-sm: 0 5px 15px rgba(0,0,0,.08);
+    --shadow-md: 0 12px 35px rgba(0,0,0,.12);
+
+    /* Transiciones */
+
+    --transition: .30s ease;
+
+    /* Espaciados */
+
+    --section-padding: 6rem 1.5rem;
+
+}
+
+/* ==========================================================
+   TIPOGRAFÍA
+========================================================== */
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-text);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--color-text-light);
+    font-size: 1rem;
+}
+
+/* ==========================================================
+   LAYOUT
+========================================================== */
+
+.container {
+    width: min(100% - 3rem, var(--container-width));
+    margin-inline: auto;
+}
+
+.section {
+    padding: var(--section-padding);
+}
+
+/* ==========================================================
+   BOTONES
+========================================================== */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 1rem 2rem;
+
+    border-radius: var(--radius-xl);
+
+    font-weight: 700;
+
+    transition: var(--transition);
+
+}
+
+.btn-primary {
+
+    color: white;
+
+    background: var(--color-primary);
+
+}
+
+.btn-primary:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-md);
+
+}
+
+.btn-secondary {
+
+    border: 2px solid var(--color-primary);
+
+    color: var(--color-primary);
+
+}
+
+.btn-secondary:hover {
+
+    background: var(--color-primary);
+
+    color: white;
+
+}
+
+/* ==========================================================
+   UTILIDADES
+========================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
