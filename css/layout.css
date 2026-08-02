@@ -1,1 +1,12 @@
+/* ==========================================================
+   LAYOUT
+========================================================== */
 
+.container {
+    width: min(100% - 3rem, var(--container-width));
+    margin-inline: auto;
+}
+
+.section {
+    padding: var(--section-padding);
+}
