@@ -481,6 +481,13 @@ background:
 
 }
 
+.mobile-menu,
+.menu-overlay {
+
+    display: none;
+
+}
+
 /* ==========================================================
    RESPONSIVE
 ========================================================== */
@@ -518,6 +525,68 @@ background:
         color: var(--color-text);
 
     }
+
+   /* ==========================
+       MENÚ MÓVIL LATERAL
+    ========================== */
+
+    .mobile-menu {
+
+        display: block;
+
+        position: fixed;
+
+        top: 0;
+        right: -320px;
+
+        width: 320px;
+        height: 100vh;
+
+        background: white;
+
+        z-index: 1000;
+
+        transition: right .3s ease;
+
+    }
+
+
+    .mobile-menu.active {
+
+        right: 0;
+
+    }
+
+
+    .menu-overlay {
+
+        display: block;
+
+        position: fixed;
+
+        inset: 0;
+
+        background: rgba(0,0,0,.5);
+
+        z-index: 900;
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transition: .3s;
+
+    }
+
+
+    .menu-overlay.active {
+
+        opacity: 1;
+
+        visibility: visible;
+
+    }
+
 
     /* ==========================
        HERO
