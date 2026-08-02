@@ -518,13 +518,26 @@ background:
 
     .menu-toggle {
 
-        display: block;
+    display: flex;
 
-        font-size: 2rem;
+    flex-direction: column;
 
-        color: var(--color-text);
+    justify-content: center;
 
-    }
+    gap: 5px;
+
+}
+
+
+.menu-toggle span {
+
+    width: 28px;
+
+    height: 3px;
+
+    background: var(--color-text);
+
+}
 
    /* ==========================
        MENÚ MÓVIL LATERAL
