@@ -10,3 +10,15 @@
 .section {
     padding: var(--section-padding);
 }
+
+/* ==========================================================
+   UTILIDADES
+========================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
