@@ -526,16 +526,30 @@ background:
 
     gap: 5px;
 
+    width: 40px;
+
+    height: 40px;
+
+    background: transparent;
+
+    border: none;
+
+    cursor: pointer;
+
 }
 
 
 .menu-toggle span {
+
+    display: block;
 
     width: 28px;
 
     height: 3px;
 
     background: var(--color-text);
+
+    border-radius: 3px;
 
 }
 
