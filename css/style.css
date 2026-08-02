@@ -210,14 +210,29 @@ p {
     position: fixed;
 
     top: 0;
-
     left: 0;
 
     width: 100%;
 
     z-index: 1000;
 
-    transition: var(--transition);
+    transition:
+        background .35s ease,
+        backdrop-filter .35s ease,
+        box-shadow .35s ease,
+        min-height .35s ease;
+
+}
+
+.navbar.scrolled {
+
+    background: rgba(255,255,255,.80);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.06);
 
 }
 
@@ -229,7 +244,15 @@ p {
 
     justify-content: space-between;
 
-    min-height: 90px;
+    min-height: 92px;
+
+    transition: .3s ease;
+
+}
+
+.navbar.scrolled .navbar-container{
+
+    min-height:76px;
 
 }
 
@@ -237,9 +260,13 @@ p {
 
     height: 70px;
 
-    width: auto;
+    transition: .35s ease;
 
-    display: block;
+}
+
+.navbar.scrolled .logo img{
+
+    height:56px;
 
 }
 
