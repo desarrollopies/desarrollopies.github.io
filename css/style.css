@@ -582,3 +582,67 @@ background:
     }
 
 }
+
+@media (max-width: 576px) {
+
+    .container {
+
+        width: min(100% - 2rem, var(--container-width));
+
+    }
+
+    .hero {
+
+        min-height: auto;
+
+        padding-top: 110px;
+
+        padding-bottom: 3rem;
+
+    }
+
+    .hero h1 {
+
+        font-size: clamp(2.2rem, 9vw, 3rem);
+
+    }
+
+    .hero p {
+
+        font-size: 1rem;
+
+        line-height: 1.7;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+
+    }
+
+    .hero-buttons .btn {
+
+        width: 100%;
+
+    }
+
+    .hero-image-background {
+
+        width: 320px;
+
+        height: 320px;
+
+    }
+
+    .hero-image img {
+
+        max-width: 100%;
+
+        border-radius: 1.5rem;
+
+    }
+
+}
