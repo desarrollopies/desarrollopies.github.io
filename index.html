@@ -65,9 +65,12 @@
 
             <button
                 class="menu-toggle"
-                aria-label="Abrir menú">
+                aria-label="Abrir menú"
+                aria-expanded="false">
 
-                ☰
+                <span></span>
+                <span></span>
+                <span></span>
 
             </button>
 
@@ -84,6 +87,38 @@
         </div>
 
     </nav>
+
+    <!-- Overlay -->
+
+    <div class="menu-overlay"></div>
+
+    <!-- Menú móvil -->
+
+    <aside class="mobile-menu">
+
+        <button
+            class="mobile-menu-close"
+            aria-label="Cerrar menú">
+
+            ✕
+
+        </button>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes">Quiénes somos</a></li>
+                <li><a href="#paais">P.A.A.I.S</a></li>
+                <li><a href="#gabinetes">Gabinetes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
 
 </header>
 
