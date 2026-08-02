@@ -302,3 +302,135 @@ p {
     display: none;
 
 }
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 90px;
+
+    background:
+
+        radial-gradient(circle at top left,
+            rgba(153,131,230,.15),
+            transparent 40%),
+
+        radial-gradient(circle at bottom right,
+            rgba(230,131,191,.12),
+            transparent 40%),
+
+        #ffffff;
+
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 4rem;
+
+}
+
+.hero-tag {
+
+    display: inline-block;
+
+    padding: .5rem 1rem;
+
+    border-radius: 999px;
+
+    background: rgba(153,131,230,.15);
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.hero h1 {
+
+    margin-bottom: 1.5rem;
+
+}
+
+.hero p {
+
+    font-size: 1.15rem;
+
+    max-width: 600px;
+
+    margin-bottom: 2rem;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+.hero-image {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.hero-image-background {
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(153,131,230,.25),
+            rgba(230,131,191,.20)
+        );
+
+    filter: blur(15px);
+
+}
+
+.hero-image img {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    border-radius: 2rem;
+
+    box-shadow: var(--shadow-md);
+
+}
