@@ -268,11 +268,13 @@ p {
 }
 
 .about-section {
-    background: linear-gradient(180deg, #ffffff, #f7f4ff);
+    background: #f3edff;
+    border-top: 1px solid rgba(153, 131, 230, .18);
 }
 
 .cabinets-section {
-    background: linear-gradient(180deg, #faf8ff, #ffffff);
+    background: #f8f5ff;
+    border-top: 1px solid rgba(153, 131, 230, .16);
 }
 
 .cabinet-grid {
@@ -322,7 +324,8 @@ p {
 }
 
 .programs-section {
-    background: linear-gradient(180deg, #fffdfd, #f9f4ff);
+    background: #fef4f9;
+    border-top: 1px solid rgba(230, 131, 191, .22);
 }
 
 .program-grid {
@@ -362,6 +365,12 @@ p {
 .about-content p {
     font-size: 1.05rem;
     line-height: 1.9;
+}
+
+/* Sección de contacto */
+.contact-section {
+    background: #f7f4ff;
+    border-top: 1px solid rgba(153, 131, 230, .2);
 }
 
 .floating-whatsapp {
@@ -608,6 +617,7 @@ p {
     align-items: center;
 
     padding-top: 90px;
+    padding-bottom: 4.5rem;
 
 background:
 
@@ -1014,7 +1024,7 @@ background:
 
         padding-top: 110px;
 
-        padding-bottom: 3rem;
+        padding-bottom: 3.4rem;
 
     }
 
