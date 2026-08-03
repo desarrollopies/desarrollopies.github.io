@@ -88,7 +88,7 @@ button {
 
     /* Espaciados */
 
-    --section-padding: 6rem 1.5rem;
+    --section-padding: 2.50rem 1.5rem;
 
 }
 
@@ -265,6 +265,103 @@ p {
 
 .whatsapp-button {
     gap: .75rem;
+}
+
+.about-section {
+    background: linear-gradient(180deg, #ffffff, #f7f4ff);
+}
+
+.cabinets-section {
+    background: linear-gradient(180deg, #faf8ff, #ffffff);
+}
+
+.cabinet-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.cabinet-card {
+    background: white;
+    border: 1px solid rgba(153, 131, 230, .18);
+    border-radius: var(--radius-lg);
+    padding: 1.4rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: .85rem;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.cabinet-card:hover,
+.program-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.cabinet-icon,
+.program-icon {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(153, 131, 230, .15);
+    color: var(--color-primary);
+    font-size: 1.15rem;
+}
+
+.cabinet-card h3 {
+    font-size: 1.2rem;
+}
+
+.cabinet-card p {
+    font-size: .95rem;
+    line-height: 1.7;
+}
+
+.programs-section {
+    background: linear-gradient(180deg, #fffdfd, #f9f4ff);
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.program-card {
+    background: white;
+    border: 1px solid rgba(153, 131, 230, .18);
+    border-radius: var(--radius-lg);
+    padding: 1.4rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: .85rem;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.program-card h3 {
+    font-size: 1.15rem;
+}
+
+.program-card p {
+    font-size: .95rem;
+    line-height: 1.7;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.2rem;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    line-height: 1.9;
 }
 
 .floating-whatsapp {
@@ -666,6 +763,11 @@ background:
         grid-template-columns: 1fr;
     }
 
+    .cabinet-grid,
+    .program-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     /* ==========================
        NAVBAR
     ========================== */
@@ -883,6 +985,11 @@ background:
 }
 
 @media (max-width: 576px) {
+
+    .cabinet-grid,
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
 
     .floating-whatsapp {
         right: 1rem;
