@@ -616,7 +616,7 @@ p {
 
     align-items: center;
 
-    padding-top: 90px;
+    padding-top: 4.5rem;
     padding-bottom: 4.5rem;
 
 background:
@@ -747,7 +747,7 @@ background:
 
     width: 100%;
 
-    max-width: 560px;
+    max-width: 280px;
 
     border-radius: 2.5rem;
 
@@ -936,7 +936,7 @@ background:
 
     .hero {
 
-        padding-top: 120px;
+        padding-top: 4rem;
 
         padding-bottom: 4rem;
 
@@ -988,7 +988,7 @@ background:
 
     .hero-image img {
 
-        max-width: 500px;
+        max-width: 380px;
 
     }
 
@@ -1022,7 +1022,7 @@ background:
 
         min-height: auto;
 
-        padding-top: 110px;
+        padding-top: 3.4rem;
 
         padding-bottom: 3.4rem;
 
@@ -1067,6 +1067,7 @@ background:
     .hero-image img {
 
         max-width: 100%;
+        max-width: 230px;
 
         border-radius: 1.5rem;
 
