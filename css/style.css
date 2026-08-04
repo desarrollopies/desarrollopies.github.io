@@ -376,7 +376,7 @@ p {
 .floating-whatsapp {
     position: fixed;
     right: 1.25rem;
-    bottom: 1.25rem;
+    bottom: 4rem;
     width: 3.75rem;
     height: 3.75rem;
     display: inline-flex;
@@ -397,6 +397,42 @@ p {
 
 .floating-whatsapp i {
     font-size: 1.7rem;
+}
+
+.site-footer {
+    background: #ffffff;
+    border-top: 1px solid rgba(153, 131, 230, .16);
+    padding: 1rem 0;
+}
+
+.site-footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: .95rem;
+    color: var(--color-text-light);
+}
+
+.footer-link {
+    font-size: .92rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.footer-link:hover {
+    color: var(--color-accent-alt);
+}
+
+@media (max-width: 768px) {
+    .site-footer__content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* ==========================================================
@@ -1003,7 +1039,7 @@ background:
 
     .floating-whatsapp {
         right: 1rem;
-        bottom: 1rem;
+        bottom: 4rem;
         width: 3.4rem;
         height: 3.4rem;
     }
